@@ -1,0 +1,29 @@
+{
+  "exclude": ["./vite.config.ts"],
+  "tsc-alias": {
+    "resolveFullPaths": true,
+    "verbose": false
+  },
+  "compilerOptions": {
+    "target": "esNext",
+    "lib": ["ESNext"],
+    "jsx": "react-jsx",
+    "moduleDetection": "force",
+    "module": "esNext",
+    "moduleResolution": "node",
+    "rootDir": "./src",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true
+  }
+}
